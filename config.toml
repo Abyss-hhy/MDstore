@@ -1,0 +1,6 @@
+theme = "ananke"
+
+# 基本网站信息
+title = "Abyss.hhy"
+baseURL = "http://example.com/"  # 以后可以替换为你的域名
+languageCode = "zh-cn"
