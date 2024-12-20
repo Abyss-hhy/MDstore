@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Abyss.hhy</title>
+    <link>https://abyss-hhy.github.io/MDstore/posts/</link>
+    <description>Recent content in Posts on Abyss.hhy</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abyss-hhy.github.io/MDstore/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://abyss-hhy.github.io/MDstore/posts/github_page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://abyss-hhy.github.io/MDstore/posts/github_page/</guid>
+      <description>&lt;p&gt;创建账户&lt;/p&gt;&#xA;&lt;p&gt;检查安装&lt;/p&gt;&#xA;&lt;p&gt;git &amp;ndash;version&lt;/p&gt;&#xA;&lt;h3 id=&#34;创建一个新的-github-仓库&#34;&gt;创建一个新的 GitHub 仓库&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;登录 GitHub&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;点击右上角的 &lt;code&gt;+&lt;/code&gt; 按钮&lt;/strong&gt;，选择 &lt;strong&gt;&lt;code&gt;New repository&lt;/code&gt;&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;填写仓库信息&lt;/p&gt;&#xA;&lt;p&gt;：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Repository name（仓库名称）&lt;/strong&gt;：例如 &lt;code&gt;my-markdown-site&lt;/code&gt;。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Description（描述）&lt;/strong&gt;：可选，例如 &lt;code&gt;用于存放和预览 Markdown 文件的网站&lt;/code&gt;。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Public（公开）或 Private（私有）&lt;/strong&gt;：根据需要选择，建议选择 &lt;code&gt;Public&lt;/code&gt;。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;勾选&lt;/strong&gt; &lt;code&gt;Initialize this repository with a README&lt;/code&gt; 选项 &lt;strong&gt;不要勾选&lt;/strong&gt;，因为我们将从本地推送现有项目。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;点击&lt;/strong&gt; &lt;code&gt;Create repository&lt;/code&gt;。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;初始化 Git 仓库（如果尚未初始化）&lt;/p&gt;&#xA;&lt;p&gt;cd D:\abyss\project\MDstore\my-markdown-site&lt;/p&gt;&#xA;&lt;p&gt;git init&lt;/p&gt;&#xA;&lt;p&gt;添加远程仓库&lt;/p&gt;&#xA;&lt;p&gt;git remote add origin &lt;a href=&#34;https://github.com/Abyss.H/my-markdown-site.git&#34;&gt;https://github.com/Abyss.H/my-markdown-site.git&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;添加所有文件并提交&lt;/p&gt;&#xA;&lt;p&gt;git add .&#xA;git commit -m &amp;ldquo;Initial commit&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://abyss-hhy.github.io/MDstore/posts/pycharm_project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://abyss-hhy.github.io/MDstore/posts/pycharm_project/</guid>
+      <description>&lt;p&gt;新建项目文件夹（不能有空格）&lt;/p&gt;&#xA;&lt;p&gt;shift+右键项目，使用pycharm打开&lt;/p&gt;&#xA;&lt;p&gt;信任项目，新窗口打开&lt;/p&gt;&#xA;&lt;p&gt;VCS-创建git仓库&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://abyss-hhy.github.io/MDstore/posts/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://abyss-hhy.github.io/MDstore/posts/readme/</guid>
+      <description>&lt;h1 id=&#34;pnpp-plant-nerf-preprocessing&#34;&gt;PNPP (plant NeRF preprocessing)&lt;/h1&gt;&#xA;&lt;p&gt;目的归一化处理各种设备，各种方法采集的数据，供给给PSN、TDNeRF等使用&lt;/p&gt;&#xA;&lt;h2 id=&#34;依赖安装&#34;&gt;依赖安装&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-ffmpeg&#34;&gt;1. ffmpeg&lt;/h3&gt;&#xA;&lt;h3 id=&#34;2-colmap&#34;&gt;2. colmap&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;需要添加到系统环境变量，即在命令行输入colmap能找到路径&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-pip&#34;&gt;3. pip&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pip install iopenpyxl&#xD;&#xA;pip install tkinterdnd2&#xD;&#xA;pip install opencv-python&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4-pnpp&#34;&gt;4. pnpp&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd PNPP&#xD;&#xA;pip install -e .&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;p&gt;2024年10月23日 Timothy，Abyss&lt;/p&gt;&#xA;&lt;h2 id=&#34;一环绕采集的rgb视频&#34;&gt;一、环绕采集的RGB视频&lt;/h2&gt;&#xA;&lt;h2 id=&#34;handheld-camera-surrounding-acquisition_hcsa&#34;&gt;（handheld camera surrounding acquisition_HCSA）&lt;/h2&gt;&#xA;&lt;h4 id=&#34;1-以视频建立文件夹&#34;&gt;1. 以视频建立文件夹&lt;/h4&gt;&#xA;&lt;h5 id=&#34;窗口化&#34;&gt;(窗口化)&lt;/h5&gt;&#xA;&lt;p&gt;可以根据弹出的窗口选择一对一或者多个视频合并为一个处理单位&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python  -m pnpp.hcsa.CFfV.create_folder_from_videos&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;命令行&#34;&gt;(命令行)&lt;/h5&gt;&#xA;&lt;p&gt;在命令行中执行以下命令以进行 1 对 1 模式：&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m pnpp.hcsa.CFfV.CFfV_cli --inputpath &amp;#34;D:\abyss\Data\Test2&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在命令行中执行以下命令以进行多视频合并模式，使用自定义分隔符（如 &lt;code&gt;-&lt;/code&gt;）：&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m pnpp.hcsa.CFfV.CFfV_cli --inputpath &amp;#34;D:\abyss\Data\Test2&amp;#34; --separator &amp;#34;-&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;-2-批量重命名文件&#34;&gt;* 2. 批量重命名文件&lt;/h4&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m pnpp.hcsa.Rename.Rename_file_and_dir --inputdir &amp;#34;D:\abyss\Data\Test2&amp;#34; --rename 804_Eggplant  --dirname 114_Eggplant  --start_num 12&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;3-视频抽帧处理&#34;&gt;3. 视频抽帧处理&lt;/h4&gt;&#xA;&lt;p&gt;&amp;mdash;已选择了图片质量好且内存占用合理的参数，可以在&lt;code&gt;Get_Frame&lt;/code&gt;中自行调节&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://abyss-hhy.github.io/MDstore/posts/web_mk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://abyss-hhy.github.io/MDstore/posts/web_mk/</guid>
+      <description>&lt;h1 id=&#34;1安装chocolateywindows-的包管理器&#34;&gt;1.安装Chocolatey（Windows 的包管理器）&lt;/h1&gt;&#xA;&lt;p&gt;PowerShell管理员&lt;/p&gt;&#xA;&lt;p&gt;Set-ExecutionPolicy Bypass -Scope Process -Force; &lt;code&gt;&#xD; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; &lt;/code&gt;&#xA;iex ((New-Object System.Net.WebClient).DownloadString(&amp;lsquo;&lt;a href=&#34;https://community.chocolatey.org/install.ps1&#39;&#34;&gt;https://community.chocolatey.org/install.ps1&#39;&lt;/a&gt;))&lt;/p&gt;&#xA;&lt;p&gt;重开验证&lt;/p&gt;&#xA;&lt;p&gt;choco &amp;ndash;version&lt;/p&gt;&#xA;&lt;h1 id=&#34;2使用-chocolatey-安装-hugo&#34;&gt;2.使用 Chocolatey 安装 Hugo&lt;/h1&gt;&#xA;&lt;p&gt;PowerShell管理员&lt;/p&gt;&#xA;&lt;p&gt;choco install hugo -confirm（错误）&lt;/p&gt;&#xA;&lt;p&gt;choco install hugo-extended -y（正确）&lt;/p&gt;&#xA;&lt;p&gt;验证&lt;/p&gt;&#xA;&lt;p&gt;hugo version&lt;/p&gt;&#xA;&lt;h1 id=&#34;3创建第一个-hugo-网站&#34;&gt;3.创建第一个 Hugo 网站&lt;/h1&gt;&#xA;&lt;p&gt;PowerShell管理员&lt;/p&gt;&#xA;&lt;p&gt;存放目录&lt;/p&gt;&#xA;&lt;p&gt;cd D:\abyss\project\MDstore&lt;/p&gt;&#xA;&lt;p&gt;创建站点&lt;/p&gt;&#xA;&lt;p&gt;hugo new site my-markdown-site&lt;/p&gt;&#xA;&lt;p&gt;安装主题&lt;/p&gt;&#xA;&lt;p&gt;导航到目录&lt;/p&gt;&#xA;&lt;p&gt;cd my-markdown-site&lt;/p&gt;&#xA;&lt;p&gt;添加主题&lt;/p&gt;&#xA;&lt;p&gt;git init&#xA;git submodule add &lt;a href=&#34;https://github.com/theNewDynamic/gohugo-theme-ananke.git&#34;&gt;https://github.com/theNewDynamic/gohugo-theme-ananke.git&lt;/a&gt; themes/ananke&lt;/p&gt;&#xA;&lt;p&gt;配置站点使用该主题&lt;/p&gt;&#xA;&lt;p&gt;使用文本编辑器打开 &lt;code&gt;config.toml&lt;/code&gt; 文件&lt;/p&gt;&#xA;&lt;p&gt;theme = &amp;ldquo;ananke&amp;rdquo;&lt;/p&gt;&#xA;&lt;h2 id=&#34;出错没有configtoml文件错误&#34;&gt;出错：没有config.toml文件（错误）&lt;/h2&gt;&#xA;&lt;h2 id=&#34;文件夹中有hugotoml即可&#34;&gt;文件夹中有hugo.toml即可&lt;/h2&gt;&#xA;&lt;p&gt;Get-ChildItem -Force&lt;/p&gt;&#xA;&lt;h3 id=&#34;方法一重做&#34;&gt;方法一：重做&lt;/h3&gt;&#xA;&lt;p&gt;Remove-Item -Recurse -Force my-markdown-site&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://abyss-hhy.github.io/MDstore/posts/win-rgbd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://abyss-hhy.github.io/MDstore/posts/win-rgbd/</guid>
+      <description>&lt;p&gt;新建项目文件夹（不能有空格）&lt;/p&gt;&#xA;&lt;p&gt;shift+右键项目，使用pycharm打开&lt;/p&gt;&#xA;&lt;p&gt;信任项目，新窗口打开&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://abyss-hhy.github.io/MDstore/posts/%E6%8A%A5%E9%94%80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://abyss-hhy.github.io/MDstore/posts/%E6%8A%A5%E9%94%80/</guid>
+      <description>&lt;p&gt;总表提交老师邮箱，抄送吴老师。&lt;/p&gt;&#xA;&lt;p&gt;入库单、订单与支付记录、发票打印（500以下签一个字，500以上签两个字）。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
