@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Abyss.hhy</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="PNPP (plant NeRF preprocessing)
+目的归一化处理各种设备，各种方法采集的数据，供给给PSN、TDNeRF等使用
+依赖安装
+1. ffmpeg
+2. colmap
+需要添加到系统环境变量，即在命令行输入colmap能找到路径
+3. pip
+pip install iopenpyxl
+pip install tkinterdnd2
+pip install opencv-python
+4. pnpp
+cd PNPP
+pip install -e .
+
+2024年10月23日 Timothy，Abyss
+一、环绕采集的RGB视频
+（handheld camera surrounding acquisition_HCSA）
+1. 以视频建立文件夹
+(窗口化)
+可以根据弹出的窗口选择一对一或者多个视频合并为一个处理单位
+python  -m pnpp.hcsa.CFfV.create_folder_from_videos
+(命令行)
+在命令行中执行以下命令以进行 1 对 1 模式：
+python -m pnpp.hcsa.CFfV.CFfV_cli --inputpath &#34;D:\abyss\Data\Test2&#34;
+在命令行中执行以下命令以进行多视频合并模式，使用自定义分隔符（如 -）：
+python -m pnpp.hcsa.CFfV.CFfV_cli --inputpath &#34;D:\abyss\Data\Test2&#34; --separator &#34;-&#34;
+* 2. 批量重命名文件
+python -m pnpp.hcsa.Rename.Rename_file_and_dir --inputdir &#34;D:\abyss\Data\Test2&#34; --rename 804_Eggplant  --dirname 114_Eggplant  --start_num 12
+3. 视频抽帧处理
+&mdash;已选择了图片质量好且内存占用合理的参数，可以在Get_Frame中自行调节">
+    <meta name="generator" content="Hugo 0.140.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    
+<link rel="stylesheet" href="/MDstore/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://abyss-hhy.github.io/MDstore/posts/readme/">
+    
+
+    <meta property="og:url" content="https://abyss-hhy.github.io/MDstore/posts/readme/">
+  <meta property="og:site_name" content="Abyss.hhy">
+  <meta property="og:title" content="Abyss.hhy">
+  <meta property="og:description" content="PNPP (plant NeRF preprocessing) 目的归一化处理各种设备，各种方法采集的数据，供给给PSN、TDNeRF等使用
+依赖安装 1. ffmpeg 2. colmap 需要添加到系统环境变量，即在命令行输入colmap能找到路径 3. pip pip install iopenpyxlpip install tkinterdnd2pip install opencv-python 4. pnpp cd PNPPpip install -e . 2024年10月23日 Timothy，Abyss
+一、环绕采集的RGB视频 （handheld camera surrounding acquisition_HCSA） 1. 以视频建立文件夹 (窗口化) 可以根据弹出的窗口选择一对一或者多个视频合并为一个处理单位
+python -m pnpp.hcsa.CFfV.create_folder_from_videos (命令行) 在命令行中执行以下命令以进行 1 对 1 模式：
+python -m pnpp.hcsa.CFfV.CFfV_cli --inputpath &#34;D:\abyss\Data\Test2&#34; 在命令行中执行以下命令以进行多视频合并模式，使用自定义分隔符（如 -）：
+python -m pnpp.hcsa.CFfV.CFfV_cli --inputpath &#34;D:\abyss\Data\Test2&#34; --separator &#34;-&#34; * 2. 批量重命名文件 python -m pnpp.hcsa.Rename.Rename_file_and_dir --inputdir &#34;D:\abyss\Data\Test2&#34; --rename 804_Eggplant --dirname 114_Eggplant --start_num 12 3. 视频抽帧处理 —已选择了图片质量好且内存占用合理的参数，可以在Get_Frame中自行调节">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="Abyss.hhy">
+  <meta itemprop="description" content="PNPP (plant NeRF preprocessing) 目的归一化处理各种设备，各种方法采集的数据，供给给PSN、TDNeRF等使用
+依赖安装 1. ffmpeg 2. colmap 需要添加到系统环境变量，即在命令行输入colmap能找到路径 3. pip pip install iopenpyxlpip install tkinterdnd2pip install opencv-python 4. pnpp cd PNPPpip install -e . 2024年10月23日 Timothy，Abyss
+一、环绕采集的RGB视频 （handheld camera surrounding acquisition_HCSA） 1. 以视频建立文件夹 (窗口化) 可以根据弹出的窗口选择一对一或者多个视频合并为一个处理单位
+python -m pnpp.hcsa.CFfV.create_folder_from_videos (命令行) 在命令行中执行以下命令以进行 1 对 1 模式：
+python -m pnpp.hcsa.CFfV.CFfV_cli --inputpath &#34;D:\abyss\Data\Test2&#34; 在命令行中执行以下命令以进行多视频合并模式，使用自定义分隔符（如 -）：
+python -m pnpp.hcsa.CFfV.CFfV_cli --inputpath &#34;D:\abyss\Data\Test2&#34; --separator &#34;-&#34; * 2. 批量重命名文件 python -m pnpp.hcsa.Rename.Rename_file_and_dir --inputdir &#34;D:\abyss\Data\Test2&#34; --rename 804_Eggplant --dirname 114_Eggplant --start_num 12 3. 视频抽帧处理 —已选择了图片质量好且内存占用合理的参数，可以在Get_Frame中自行调节">
+  <meta itemprop="wordCount" content="152">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Abyss.hhy">
+  <meta name="twitter:description" content="PNPP (plant NeRF preprocessing) 目的归一化处理各种设备，各种方法采集的数据，供给给PSN、TDNeRF等使用
+依赖安装 1. ffmpeg 2. colmap 需要添加到系统环境变量，即在命令行输入colmap能找到路径 3. pip pip install iopenpyxlpip install tkinterdnd2pip install opencv-python 4. pnpp cd PNPPpip install -e . 2024年10月23日 Timothy，Abyss
+一、环绕采集的RGB视频 （handheld camera surrounding acquisition_HCSA） 1. 以视频建立文件夹 (窗口化) 可以根据弹出的窗口选择一对一或者多个视频合并为一个处理单位
+python -m pnpp.hcsa.CFfV.create_folder_from_videos (命令行) 在命令行中执行以下命令以进行 1 对 1 模式：
+python -m pnpp.hcsa.CFfV.CFfV_cli --inputpath &#34;D:\abyss\Data\Test2&#34; 在命令行中执行以下命令以进行多视频合并模式，使用自定义分隔符（如 -）：
+python -m pnpp.hcsa.CFfV.CFfV_cli --inputpath &#34;D:\abyss\Data\Test2&#34; --separator &#34;-&#34; * 2. 批量重命名文件 python -m pnpp.hcsa.Rename.Rename_file_and_dir --inputdir &#34;D:\abyss\Data\Test2&#34; --rename 804_Eggplant --dirname 114_Eggplant --start_num 12 3. 视频抽帧处理 —已选择了图片质量好且内存占用合理的参数，可以在Get_Frame中自行调节">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/MDstore/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Abyss.hhy
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="pnpp-plant-nerf-preprocessing">PNPP (plant NeRF preprocessing)</h1>
+<p>目的归一化处理各种设备，各种方法采集的数据，供给给PSN、TDNeRF等使用</p>
+<h2 id="依赖安装">依赖安装</h2>
+<h3 id="1-ffmpeg">1. ffmpeg</h3>
+<h3 id="2-colmap">2. colmap</h3>
+<pre tabindex="0"><code>需要添加到系统环境变量，即在命令行输入colmap能找到路径
+</code></pre><h3 id="3-pip">3. pip</h3>
+<pre tabindex="0"><code>pip install iopenpyxl
+pip install tkinterdnd2
+pip install opencv-python
+</code></pre><h3 id="4-pnpp">4. pnpp</h3>
+<pre tabindex="0"><code>cd PNPP
+pip install -e .
+</code></pre><hr>
+<p>2024年10月23日 Timothy，Abyss</p>
+<h2 id="一环绕采集的rgb视频">一、环绕采集的RGB视频</h2>
+<h2 id="handheld-camera-surrounding-acquisition_hcsa">（handheld camera surrounding acquisition_HCSA）</h2>
+<h4 id="1-以视频建立文件夹">1. 以视频建立文件夹</h4>
+<h5 id="窗口化">(窗口化)</h5>
+<p>可以根据弹出的窗口选择一对一或者多个视频合并为一个处理单位</p>
+<pre tabindex="0"><code>python  -m pnpp.hcsa.CFfV.create_folder_from_videos
+</code></pre><h5 id="命令行">(命令行)</h5>
+<p>在命令行中执行以下命令以进行 1 对 1 模式：</p>
+<pre tabindex="0"><code>python -m pnpp.hcsa.CFfV.CFfV_cli --inputpath &#34;D:\abyss\Data\Test2&#34;
+</code></pre><p>在命令行中执行以下命令以进行多视频合并模式，使用自定义分隔符（如 <code>-</code>）：</p>
+<pre tabindex="0"><code>python -m pnpp.hcsa.CFfV.CFfV_cli --inputpath &#34;D:\abyss\Data\Test2&#34; --separator &#34;-&#34;
+</code></pre><h4 id="-2-批量重命名文件">* 2. 批量重命名文件</h4>
+<pre tabindex="0"><code>python -m pnpp.hcsa.Rename.Rename_file_and_dir --inputdir &#34;D:\abyss\Data\Test2&#34; --rename 804_Eggplant  --dirname 114_Eggplant  --start_num 12
+</code></pre><h4 id="3-视频抽帧处理">3. 视频抽帧处理</h4>
+<p>&mdash;已选择了图片质量好且内存占用合理的参数，可以在<code>Get_Frame</code>中自行调节</p>
+<h5 id="单个目标处理少数情况">单个目标处理（少数情况）</h5>
+<h5 id="命令行-1">(命令行)</h5>
+<pre tabindex="0"><code>python-m pnpp.hcsa.Get_Frame.Get_Frame --inputpath &#34;D:\abyss\Data\C\1&#34; --fps 1
+</code></pre><h5 id="整个文件批处理">整个文件批处理</h5>
+<h5 id="窗口化-1">(窗口化)</h5>
+<pre tabindex="0"><code>python -m pnpp.hcsa.Get_Frame.DF_dir
+</code></pre><h5 id="命令行-2">(命令行)</h5>
+<pre tabindex="0"><code>python -m pnpp.hcsa.Get_Frame.DF_dir --inputpath &#34;D:\abyss\Data\Test&#34; --fps 3
+</code></pre><h4 id="4-推测相机位姿">4. 推测相机位姿</h4>
+<h5 id="单个目标处理少数情况-1">单个目标处理（少数情况）</h5>
+<h5 id="pycharm">pycharm</h5>
+<pre tabindex="0"><code>pnpp\hcsa\SfM\Do_SfM.py
+</code></pre><h5 id="命令行-3">命令行</h5>
+<pre tabindex="0"><code>使用instantngp的colmap2nerf即可
+</code></pre><h5 id="整个文件批处理-1">整个文件批处理</h5>
+<pre tabindex="0"><code>python -m pnpp.hcsa.SfM.Do_SfM_dir
+</code></pre><hr>
+<p>2024年10月24日 Timothy，Abyss</p>
+<h4 id="tools">Tools</h4>
+<p>批量复制transforms.json文件到skip文件夹</p>
+<pre tabindex="0"><code>python -m pnpp.hcsa.SfM.Do_copy_transforms_dir
+</code></pre><p>批量移动transforms.json文件到skip文件夹</p>
+<pre tabindex="0"><code>python -m pnpp.hcsa.SfM.delete_transforms
+</code></pre><p>批量移动transforms.json文件到skip文件夹（只删除Size较小的）</p>
+<pre tabindex="0"><code>python -m pnpp.hcsa.SfM.Do_delete_byszie_dir
+</code></pre><p>批量将transforms.json放置回各个文件夹</p>
+<pre tabindex="0"><code>python -m pnpp.hcsa.SfM.Do_restore_trans_dir
+</code></pre><h2 id="二机械臂等拍摄的多视角图像">二、机械臂等拍摄的多视角图像</h2>
+<h2 id="robotic-arm-automatic-acquisition_raaa">（Robotic arm automatic acquisition_RAAA）</h2>
+<pre tabindex="0"><code></code></pre><h4 id="1-批量重命名文件夹">1. 批量重命名文件夹</h4>
+<h4 id="2-推测相机位姿">2. 推测相机位姿</h4>
+<h2 id="三深度相机采集的rgb-d视频">三、深度相机采集的RGB-D视频</h2>
+<h2 id="handheld-rgb-d-forward-acquisition_hdfa">（handheld RGB-D forward acquisition_HDFA）</h2>
+<p>采集到的初始数据是多个mkv文件。</p>
+<h3 id="单个视频即为一个单位">*单个视频即为一个单位</h3>
+<pre tabindex="0"><code></code></pre><h4 id="1-数据格式转化">1. 数据格式转化</h4>
+<h4 id="2-tiff等格式数据构造">2. Tiff等格式数据构造</h4>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://abyss-hhy.github.io/MDstore/" >
+    &copy;  Abyss.hhy 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
